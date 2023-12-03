@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --font: #2D2D2D;
+    --bodyBackgroud: rgb(200, 190, 255);
+    --inputBackground: rgb(229, 216, 255);
+    --buttonDanger: rgb(244, 57, 57);
+    --buttonSafe: rgb(57, 244, 138);
+    --buttonChange: rgb(244, 213, 57);
+    --shadow: #00000029;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--font);
+    background-color: var(--bodyBackgroud);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding-block: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-block: 2rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+#add-contact,
+#edit-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.8rem 0.5rem;
+}
+
+input {
+    width: 25rem;
+    height: 3rem;
+    background-color: var(--inputBackground);
+    border: none;
+    border-radius: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 1rem 0.8rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: max-content;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--inputBackground);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#delete:hover,
+#exit:hover {
+    background-color: var(--buttonDanger);
+}
+
+#add:hover,
+#confirm:hover {
+    background-color: var(--buttonSafe);
+}
+
+#edit:hover {
+    background-color: var(--buttonChange);
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.add,
+.edit {
+    width: max-content;
+    background: rgb(180, 143, 255) 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 8px var(--shadow);
+    border-radius: 2%;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 0 8%;
+}
+
+table {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+thead {
+    text-align: left;
+}
+
+th {
+    padding-block: 1rem;
+}
+
+td {
+    padding-right: 1rem;
+}
